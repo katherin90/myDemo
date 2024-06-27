@@ -1,57 +1,57 @@
 const projectsData = [
     {
         title: 'Ukrainian Symbols',
-        link: '/UkrainianSymbols/index.html',
+        link: 'UkrainianSymbols/index.html',
         technologies: ['html', 'css', 'js', 'canvas'],
-        img: '/img/project-img1-big.webp'
+        img: 'img/project-img1-big.webp'
     },
     {
         title: 'Tiger',
         link: 'https://codepen.io/katherin90/full/wvqRQjE',
         technologies: ['html', 'css'],
-        img: '/img/project-img2-big.webp'
+        img: 'img/project-img2-big.webp'
     },
     {
         title: 'Minion',
         link: 'https://codepen.io/katherin90/full/gOMgwGp',
         technologies: ['html', 'css'],
-        img: '/img/project-img3-big.webp'
+        img: 'img/project-img3-big.webp'
     },
     {
         title: 'Seasons',
         link: 'https://codepen.io/katherin90/full/mdWdzgY',
         technologies: ['html', 'css', 'css animation'],
-        img: '/img/project-img4-big.webp'
+        img: 'img/project-img4-big.webp'
     },
     {
         title: 'bodo',
         link: 'https://www.bodo.ua/ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        img: '/img/project-img5-big.webp'
+        img: 'img/project-img5-big.webp'
     },
     {
         title: 'bodotravel',
         link: 'https://travel.bodo.ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        img: '/img/project-img6-big.webp'
+        img: 'img/project-img6-big.webp'
     },
     {
         title: 'bodocard',
         link: 'https://bodocard.ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        img: '/img/project-img7-big.webp'
+        img: 'img/project-img7-big.webp'
     },
     {
         title: 'Happy New Year 2020',
         link: 'https://codepen.io/katherin90/full/oNgYyMG',
         technologies: ['html', 'css', 'css animation'],
-        img: '/img/project-img8-big.webp'
+        img: 'img/project-img8-big.webp'
     },
     {
         title: 'Cat',
         link: 'https://codepen.io/katherin90/full/jOEMpLB',
         technologies: ['html', 'css'],
-        img: '/img/project-img9-big.webp'
+        img: 'img/project-img9-big.webp'
     },
 ]
 
