@@ -75,14 +75,28 @@ ul {
         font-weight: 600;
         letter-spacing: 1px;
     }
-    .right-part {
-        a {
-            font-size: 1.25rem;
-            color: var(--textColor);
-            text-decoration: none;
-            transition: color 0.4s;
+}
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.contacts-icon {
+    width: 24px;
+    height: 24px;
+    use {
+        stroke: var(--textColor);
+    }
+    &:hover {
+        use {
+            stroke: var(--accentColor);
         }
     }
+}
+.contacts-link {
+    display: block;
+    width: 24px;
+    height: 24px;
 }
 
 .hero__content {
@@ -287,6 +301,14 @@ ul {
     .container {
         max-width: 2500px;
     }
+    .contacts-link {
+        width: 48px;
+        height: 48px;
+    }
+    .contacts-icon {
+        width: 48px;
+        height: 48px;
+    }
     .info-popup__content {
         max-width: 2000px;
     }
@@ -336,9 +358,9 @@ ul {
 @media (max-width: 400px) {
     .header-content  {
         display: block;
-        .right-part {
-            text-align: right;
-        }
+    }
+    .contacts-list {
+        justify-content: flex-end;
     }
     .hero__photo {
         &:before {
