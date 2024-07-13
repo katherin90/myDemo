@@ -53,6 +53,12 @@ const projectsData = [
         technologies: ['html', 'css'],
         img: 'img/project-img9-big.webp'
     },
+    {
+        title: 'Whimsy games',
+        link: 'https://whimsygames.co/',
+        technologies: ['html', 'css', 'js'],
+        img: 'img/project-img10-big.webp'
+    },
 ]
 
 class InfoPopup {
