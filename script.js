@@ -3,61 +3,61 @@ const projectsData = [
         title: 'Ukrainian Symbols',
         link: 'UkrainianSymbols/index.html',
         technologies: ['html', 'css', 'js', 'canvas'],
-        img: 'img/project-img1-big.webp'
+        imgs: ['img/project1/1.webp', 'img/project1/3.webp', 'img/project1/2.webp']
     },
     {
         title: 'Tiger',
         link: 'https://codepen.io/katherin90/full/wvqRQjE',
         technologies: ['html', 'css'],
-        img: 'img/project-img2-big.webp'
+        imgs: ['img/project2/1.webp', 'img/project2/2.webp', 'img/project2/3.webp']
     },
     {
         title: 'Minion',
         link: 'https://codepen.io/katherin90/full/gOMgwGp',
         technologies: ['html', 'css'],
-        img: 'img/project-img3-big.webp'
+        imgs: ['img/project3/1.webp', 'img/project3/2.webp']
     },
     {
         title: 'Seasons',
         link: 'https://codepen.io/katherin90/full/mdWdzgY',
         technologies: ['html', 'css', 'css animation'],
-        img: 'img/project-img4-big.webp'
+        imgs: ['img/project4/1.webp',]
     },
     {
         title: 'bodo',
         link: 'https://www.bodo.ua/ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        img: 'img/project-img5-big.webp'
+        imgs: ['img/project5/1.webp', 'img/project5/2.webp', 'img/project5/3.webp', 'img/project5/4.webp', 'img/project5/5.webp', 'img/project5/6.webp','img/project5/7.webp']
     },
     {
         title: 'bodotravel',
         link: 'https://travel.bodo.ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        img: 'img/project-img6-big.webp'
+        imgs: ['img/project6/1.webp']
     },
     {
         title: 'bodocard',
         link: 'https://bodocard.ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        img: 'img/project-img7-big.webp'
+        imgs: ['img/project7/1.webp']
     },
     {
         title: 'Happy New Year 2020',
         link: 'https://codepen.io/katherin90/full/oNgYyMG',
         technologies: ['html', 'css', 'css animation'],
-        img: 'img/project-img8-big.webp'
+        imgs: ['img/project8/1.webp']
     },
     {
         title: 'Cat',
         link: 'https://codepen.io/katherin90/full/jOEMpLB',
         technologies: ['html', 'css'],
-        img: 'img/project-img9-big.webp'
+        imgs: ['img/project9/1.webp']
     },
     {
         title: 'Whimsy games',
         link: 'https://whimsygames.co/',
         technologies: ['html', 'css', 'js'],
-        img: 'img/project-img10-big.webp'
+        imgs: ['img/project10/1.webp']
     },
 ]
 
@@ -83,18 +83,23 @@ class InfoPopup {
         document.body.classList.remove('locked')
     }
     addContent = (data) => {
-        const {title, img, link, technologies} = data
+        const {title, imgs, link, technologies} = data
         const clone = this.template.content.cloneNode(true)
         let headline = clone.querySelector('h3')
-        let images = clone.querySelector('img')
+        let imagesContainer = clone.querySelector('.popup-imgs')
         let technologiesList = clone.querySelector('ul')
         let a = clone.querySelector('a')
 
         headline.textContent = title
-        images.src = img
         a.href = link
         technologies.forEach(technology=>{
             technologiesList.append(this.createTechnologiesItem(technology))
+        })
+        imgs.forEach(img=>{
+            const tagImg = document.createElement('img')
+            tagImg.src = img
+            tagImg.classList = 'popup-img'
+            imagesContainer.append(tagImg)
         })
 
         this.popupContent.innerHTML = ''
