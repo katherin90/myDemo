@@ -135,6 +135,39 @@ ul {
     }
 }
 
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.skills-items {
+    display: flex;
+    flex-direction: column;
+}
+.skills-name {
+    margin-bottom: 0.62rem;
+    font-size: 1.12rem;
+
+}
+progress[value] {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    border: 1px solid var(--accentColor);
+    background-color: transparent;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: transparent;
+    padding: 5px;
+}
+  
+progress[value]::-webkit-progress-value {
+    background-color: var(--textColor);
+}
+
 .projects-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
