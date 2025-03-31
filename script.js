@@ -21,7 +21,7 @@ const projectsData = [
         title: 'Seasons',
         link: 'https://codepen.io/katherin90/full/mdWdzgY',
         technologies: ['html', 'css', 'css animation'],
-        imgs: ['img/project4/1.webp',]
+        imgs: ['img/project4/1.webp', 'img/project4/2.webp', 'img/project4/3.webp', 'img/project4/4.webp']
     },
     {
         title: 'bodo',
@@ -33,25 +33,25 @@ const projectsData = [
         title: 'bodotravel',
         link: 'https://travel.bodo.ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        imgs: ['img/project6/1.webp']
+        imgs: ['img/project6/1.webp', 'img/project6/2.webp', 'img/project6/3.webp', 'img/project6/4.webp', 'img/project6/5.webp', 'img/project6/6.webp', 'img/project6/7.webp', 'img/project6/8.webp', 'img/project6/9.webp', 'img/project6/10.webp' ]
     },
     {
         title: 'bodocard',
         link: 'https://bodocard.ua/',
         technologies: ['html', 'css', 'js (jquery)'],
-        imgs: ['img/project7/1.webp']
+        imgs: ['img/project7/1.webp', 'img/project7/2.webp', 'img/project7/3.webp', 'img/project7/4.webp', 'img/project7/5.webp', 'img/project7/6.webp', 'img/project7/7.webp',]
     },
     {
         title: 'Happy New Year 2020',
         link: 'https://codepen.io/katherin90/full/oNgYyMG',
         technologies: ['html', 'css', 'css animation'],
-        imgs: ['img/project8/1.webp']
+        imgs: ['img/project8/1.webp', 'img/project8/2.webp', 'img/project8/3.webp']
     },
     {
         title: 'Cat',
         link: 'https://codepen.io/katherin90/full/jOEMpLB',
-        technologies: ['html', 'css'],
-        imgs: ['img/project9/1.webp']
+        technologies: ['html', 'css', 'css animation'],
+        imgs: ['img/project9/1.webp', 'img/project9/2.webp', 'img/project9/3.webp']
     },
     {
         title: 'Whimsy games',

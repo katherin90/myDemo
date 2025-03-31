@@ -167,6 +167,9 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
     background-color: var(--textColor);
 }
+.list-headline {
+    margin-bottom: 15px;
+}
 
 .projects-list {
     display: grid;
