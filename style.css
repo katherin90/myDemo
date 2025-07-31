@@ -169,6 +169,9 @@ progress[value]::-webkit-progress-value {
 }
 .list-headline {
     margin-bottom: 15px;
+    &:not(:first-of-type) {
+        margin-top: 50px;
+    }
 }
 
 .projects-list {

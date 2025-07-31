@@ -59,6 +59,12 @@ const projectsData = [
         technologies: ['html', 'css', 'js'],
         imgs: ['img/project10/1.webp']
     },
+    {
+        title: 'demo Foodielend',
+        link: 'https://demo-foodielend.netlify.app/',
+        technologies: ['React.js', 'Next.js', 'TypeScript', 'Css Module', 'SASS'],
+        imgs: ['img/project11/1.webp', 'img/project11/2.webp', 'img/project11/3.webp', 'img/project11/4.webp', 'img/project11/5.webp'],
+    },
 ]
 
 class InfoPopup {
@@ -83,7 +89,7 @@ class InfoPopup {
         document.body.classList.remove('locked')
     }
     addContent = (data) => {
-        const {title, imgs, link, technologies} = data
+        const {title, imgs, link, technologies, git} = data
         const clone = this.template.content.cloneNode(true)
         let headline = clone.querySelector('h3')
         let imagesContainer = clone.querySelector('.popup-imgs')
