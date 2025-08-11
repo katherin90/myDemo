@@ -447,6 +447,39 @@ progress[value]::-webkit-progress-value {
     }
 }
 
+@media (max-width: 820px) {
+    .info-popup__content {
+        padding-right: 0.94rem;
+    }
+    .popup-imgs {
+        flex-direction: column;
+        margin-top: 1.07rem;
+        padding-right: 0.94rem;
+        height: 350px;
+    }
+    .popup-img:first-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 580px) {
+    .popup-img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+        max-height: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__photo-img {
+        height: 315px;
+    }
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 400px) {
     .header-content  {
         display: block;
@@ -459,9 +492,6 @@ progress[value]::-webkit-progress-value {
             top: 0.35rem;
             left: 0.35rem;
         }
-    }
-    .hero__photo-img {
-        height: 450px;
     }
     .hero__about {
         h1 {
